@@ -5,29 +5,24 @@ tema: white
 ---
 <section data-background="http://iesgn.github.io/presentacion-ual/img/openstack.png">
   <h2>Infraestructura en la nube con OpenStack</h2>
-  <small><a href="http://albertomolina.wordpress.com">Alberto Molina
-      Coballes</a>
+  <small>
+    <a href="http://albertomolina.wordpress.com">Alberto Molina Coballes</a>
     / <a href="http://twitter.com/alberto_molina">@alberto_molina</a> y
-    <a href="http://josedomingo.org">José Domingo Muñoz
-      Rodríguez</a> / <a
-        href="http://twitter.com/Pledin_JD">@Pledin_JD</a> </small>
-      </p>
-      <p><small>
-    <a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="../../img/cc_by_sa.png"
-    width="100px" border="0"/></a></small></p>
+    <a href="http://josedomingo.org">José Domingo Muñoz Rodríguez</a>
+    / <a href="http://twitter.com/Pledin_JD">@Pledin_JD</a>
+  </small>
+  <p><small>
+    <a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="img/cc_by_sa.png"
+								  width="100px" border="0"/></a></small></p>
+  <p>II Semana Informática. Universidad de Almería. 17 Febrero 2015</p>
     </section>
 </section>
 <section>
   <h2>Sobre nosotros</h2>
-  <p>Profesores de Formación Profesional de Informática en el IES Gonzalo
-  Nazareno de Dos Hermanas (Sevilla). Impartimos:</p>
   <ul>
-    <li>Administración de Sistemas Informáticos en Red (ASIR)</li>
-    <li>Sistemas Microinformáticos y Redes (SMR)</li>
-  </ul>
-  <ul>
-    <li>Experiencia como sysadmins</li>
-    <li>Detectamos demanda de formación en cloud</li>
+    <li>Profesores de Formación Profesional en el IES Gonzalo Nazareno de Dos Hermanas (Sevilla)</li>
+    <li>Experiencia como Administradores de sistemas GNU/Linux</li>
+    <li>Detectamos demanda de formación en cloud computing</li>
     <li>2011-2012: Proyecto de Innovación Mº Educación</li>
     <li>Trabajando con OpenStack desde 2011-2012</li>
   </ul>
@@ -38,28 +33,54 @@ tema: white
     <h3>¿A qué llamamos infraestructura?</h3>
     <p>Equipos para procesamiento, conexión y almacenamiento de datos</p>
     <h3>Evolución</h3>
+    <ol>
+      <li>Equipos físicos</li>
+      <li>Máquinas virtuales</li>
+      <li>Infraestructura en la nube</li>
+    </ol>
+  </section>
+  <section>
+    <h2>Infraestructura tradicional</h2>
     <ul>
-      <li>1ª generación: Equipos físicos</li>
-      <li>2ª generación: Hipervisores, máquinas virtuales y redes virtuales</li>
-      <li>3ª generación: Infraestructura en la nube</li>
+      <li>Adquisición de equipos</li>
+      <li>Montaje físico</li>
+      <li>Instalación y configuración "manual"</li>
+      <li>Interconexión a través de redes físicas</li>
+      <li>Gestión del almacenamiento NAS o SAN</li>
+      <li>Estática: Se mantienen las mismas configuraciones durante años</li>
+      <li>Usuarios sin acceso directo</li>
+  </section>
+  <section>
+    <h2>Virtualización</h2>
+    <ul>
+      <li>Dentro de un solo equipo físico se ejecutan varias MVs</li>
+      <li>El sw para la gestión de MVs se denomina hipervisor</li>
+      <li>Se conectan las MVs entre sí en redes virtuales</li>
+      <li>Sin cambios relevantes en almacenamiento</li>
+      <li>Gestión similar a la infraestructura tradicional</li>
     </ul>
   </section>
   <section>
-    Imagen de 1ª gen
+    <h2>Infraestructura en nube</h2>
+    <ul>
+      <li>Virtualización de la red</li>
+      <li>Virtualización del almacenamiento</li>
+      <li>Agrupamiento de los recursos</li>
+      <li>Dinámica</li>
+      <li>Puede cambiar rápidamente en función de las necesidades</li>
+      <li>Configuración automática</li>
+      <li>El usuario sí puede gestionar su infraestructura</li>
+    </ul>
   </section>
   <section>
-    Imagen de 2ª gen
-  </section>
-  <section>
-    Imagen de 3ª gen
-  </section>
-  <section>
+    <h2>
     Cambios para el administrador y cambios para el usuario
   </section>
 </section>
+<section>
+  <h2>Cloud Computing</h2>
 </section>
 <section>
-  <h2>Introducción al Cloud Computing</h2>
   <section>
     <h2>Cloud Computing. Características</h2>
     <ul>
@@ -125,20 +146,19 @@ tema: white
 	Rackspace Cloud Servers, Google Compute Engine</li>
   </section>
   <section>
-    <a href="http://ad-hoc.net/blogs/wp-content/uploads/2010/12/IaaS-PaaS-SaaS.png"><img src="http://ad-hoc.net/blogs/wp-content/uploads/2010/12/IaaS-PaaS-SaaS.png"
-											 alt="iaas-paas-saas"/></a>
-    <p>Fuente: <a href="http://ad-hoc.net/blogs/2010/12/la-nube-iaas-paas-saas-itaa-un-breve-repaso-de-conceptos/">ad-hoc.net/blogs</a></p>
+    <a href="http://mschnlnine.vo.llnwd.net/d1/inetpub/kevinremde/Images/679669067395_DBE9/image_thumb.png"><img src="http://mschnlnine.vo.llnwd.net/d1/inetpub/kevinremde/Images/679669067395_DBE9/image_thumb.png" alt="iaas-paas-saas"/></a>
+    <p>Fuente: <a href="http://blogs.technet.com/b/kevinremde/archive/2011/04/03/saas-paas-and-iaas-oh-my-quot-cloudy-april-quot-part-3.aspx">Kevin Remde</a></p>
   </section>
 </section>
     <section>
       <h2>Tipos de despliegues</h2>
       <ul>
-        <li>Público: Una empresa ofrece servicios a terceros, encargándose
+        <li><strong>Público</strong> Una empresa ofrece servicios a terceros, encargándose
         de toda la gestión del Cloud.</li>
-        <li>Privado: Una organización configura sus propios recursos de
+        <li><strong>Privado</strong> Una organización configura sus propios recursos de
         forma mucho más flexible en una nube. En inglés también se
         denomina "On premise cloud"</li>
-        <li>Híbrido: Se utilizan recursos de la nube privada o de una o
+        <li><strong>Híbrido</strong> Se utilizan recursos de la nube privada o de una o
     varias nubes públicas en función de las características de cada
     caso o las necesidades puntuales que haya. Normalmente utilizan
     una API común que permita una buena integración.</li>
