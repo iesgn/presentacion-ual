@@ -30,17 +30,20 @@ tema: white
     <li>Detectamos demanda de formación en cloud</li>
     <li>2011-2012: Proyecto de Innovación Mº Educación</li>
     <li>Trabajando con OpenStack desde 2011-2012</li>
+  </ul>
 </section>
 <section>
-  <h2>Infraestructura: Evolución</h2>
-  <h3>¿A qué llamamos infraestructura?</h3>
-  <p>Equipos para procesamiento, conexión y almacenamiento de datos</p>
-  <h3>Evolución</h3>
-  <ul>
-    <li>1ª generación: Equipos físicos</li>
-    <li>2ª generación: Hipervisores, máquinas virtuales y redes virtuales</li>
-    <li>3ª generación: Infraestructura en la nube</li>
-  </ul>
+  <section>
+    <h2>Infraestructura: Evolución</h2>
+    <h3>¿A qué llamamos infraestructura?</h3>
+    <p>Equipos para procesamiento, conexión y almacenamiento de datos</p>
+    <h3>Evolución</h3>
+    <ul>
+      <li>1ª generación: Equipos físicos</li>
+      <li>2ª generación: Hipervisores, máquinas virtuales y redes virtuales</li>
+      <li>3ª generación: Infraestructura en la nube</li>
+    </ul>
+  </section>
   <section>
     Imagen de 1ª gen
   </section>
@@ -54,81 +57,79 @@ tema: white
     Cambios para el administrador y cambios para el usuario
   </section>
 </section>
+</section>
 <section>
   <h2>Introducción al Cloud Computing</h2>
-    <section>
-      <section>
-      <h2>Cloud Computing. Características</h2>
-      <ul>
-        <li>Servicio disponible de forma automática y a demanda</li>
-        <li>Accesible a través de la red</li>
-        <li>Modelo multi-tenancy
+  <section>
+    <h2>Cloud Computing. Características</h2>
     <ul>
-      <li>Se comparten los recursos con otros usuarios</li>
-      <li>Debe garantizarse aislamiento y seguridad entre
-      usuarios</li>
+      <li>Servicio disponible de forma automática y a demanda</li>
+      <li>Accesible a través de la red</li>
+      <li>Modelo multi-tenancy
+	<ul>
+	  <li>Se comparten los recursos con otros usuarios</li>
+	  <li>Debe garantizarse aislamiento y seguridad entre
+	    usuarios</li>
+	</ul>
+      </li>
+      <li>Los recursos se agrupan en <em>pools</em></li>
+      <li>Elasticidad</li>
+      <li>Pago por uso</li>
     </ul>
-        </li>
-        <li>Los recursos se agrupan en <em>pools</em></li>
-        <li>Elasticidad</li>
-        <li>Pago por uso</li>
-      </ul>
-      <br/>
-      <p>
-        <small>Fuente: <a href="http://csrc.nist.gov/publications/nistpubs/800-145/SP800-145.pdf">The NIST Definition of Cloud Computing</a></small></p>
-      </section>
-    </section>
-    <section>
-      <section>
-        <h2>... as a Service (...aaS)</h2>
-        <ul>
-    <li>Modelo de negocio no basado en la venta de licencias o
-    hardware</li>
-    <li>Oferta de servicios con caracterísicas de cloud</li>
-    <li>Habitualmente se definen tres capas o niveles: SaaS, PaaS e
-    IaaS</li>
-      </section>
-      <section>
-        <h3>Software as a Service (SaaS)</h3>
-        <p>Aplicación como servicio en la nube</p>
-        <ul>
-    <li>El usuario utiliza una aplicación a través de la web en
-    lugar de tenerla instalada en el propio equipo.
-      Aviso: No todas las aplicaciones web son SaaS, deben cumplir
-    con las características.</li>
-    <li>Utilizado por cualquier usuario</li>
-    <li>Ya lo usamos, pero se prevé que se use cada vez más</li>
-    <li>Ejemplos: Servicios de Google, Office365</li>
-        </ul>
-      </section>
-      <section>
-        <h3>Platform as a Service (PaaS)</h3>
-        <p>Plataforma de desarrollo web en la nube</p>
-        <ul>
-    <li>Utilizado por desarrolladores de software</li>
-    <li>Se proporciona toda la plataforma de desarrollo y despliegue
-    de una aplicación al desarrollador</li>
-    <li>Ejemplos: Google App Engine, Windows Azure, Heroku,
-    Openshift, CloudFoundry
-        </ul>
-      </section>
-      <section>
-        <h3>Infrastructure as a Service (IaaS)</h3>
-        <p>Infraestructura como servicio en la nube</p>
-        <ul>
-    <li>Utilizado principalmente por administradores de
-    sistemas</li>
-    <li>Se proporciona principalmente capacidad de cómputo, redes y
-    diversos modos de almacenamiento</li>
-    <li>Ejemplos: Amazon Web Services, Joyent, Windows Azure,
-    Rackspace Cloud Servers, Google Compute Engine</li>
-      </section>
-      <section>
-        <a href="http://ad-hoc.net/blogs/wp-content/uploads/2010/12/IaaS-PaaS-SaaS.png"><img src="http://ad-hoc.net/blogs/wp-content/uploads/2010/12/IaaS-PaaS-SaaS.png"
-        alt="iaas-paas-saas"/></a>
-        <p>Fuente: <a href="http://ad-hoc.net/blogs/2010/12/la-nube-iaas-paas-saas-itaa-un-breve-repaso-de-conceptos/">ad-hoc.net/blogs</a></p>
-        </section>
-    </section>
+    <br/>
+    <p>
+      <small>Fuente: <a href="http://csrc.nist.gov/publications/nistpubs/800-145/SP800-145.pdf">The NIST Definition of Cloud Computing</a></small></p>
+  </section>
+  <section>
+    <h2>... as a Service (...aaS)</h2>
+    <ul>
+      <li>Modelo de negocio no basado en la venta de licencias o
+	hardware</li>
+      <li>Oferta de servicios con caracterísicas de cloud</li>
+      <li>Habitualmente se definen tres capas o niveles: SaaS, PaaS e
+	IaaS</li>
+  </section>
+  <section>
+    <h3>Software as a Service (SaaS)</h3>
+    <p>Aplicación como servicio en la nube</p>
+    <ul>
+      <li>El usuario utiliza una aplicación a través de la web en
+	lugar de tenerla instalada en el propio equipo.
+	Aviso: No todas las aplicaciones web son SaaS, deben cumplir
+	con las características.</li>
+      <li>Utilizado por cualquier usuario</li>
+      <li>Ya lo usamos, pero se prevé que se use cada vez más</li>
+      <li>Ejemplos: Servicios de Google, Office365</li>
+    </ul>
+  </section>
+  <section>
+    <h3>Platform as a Service (PaaS)</h3>
+    <p>Plataforma de desarrollo web en la nube</p>
+    <ul>
+      <li>Utilizado por desarrolladores de software</li>
+      <li>Se proporciona toda la plataforma de desarrollo y despliegue
+	de una aplicación al desarrollador</li>
+      <li>Ejemplos: Google App Engine, Windows Azure, Heroku,
+	Openshift, CloudFoundry
+    </ul>
+  </section>
+  <section>
+    <h3>Infrastructure as a Service (IaaS)</h3>
+    <p>Infraestructura como servicio en la nube</p>
+    <ul>
+      <li>Utilizado principalmente por administradores de
+	sistemas</li>
+      <li>Se proporciona principalmente capacidad de cómputo, redes y
+	diversos modos de almacenamiento</li>
+      <li>Ejemplos: Amazon Web Services, Joyent, Windows Azure,
+	Rackspace Cloud Servers, Google Compute Engine</li>
+  </section>
+  <section>
+    <a href="http://ad-hoc.net/blogs/wp-content/uploads/2010/12/IaaS-PaaS-SaaS.png"><img src="http://ad-hoc.net/blogs/wp-content/uploads/2010/12/IaaS-PaaS-SaaS.png"
+											 alt="iaas-paas-saas"/></a>
+    <p>Fuente: <a href="http://ad-hoc.net/blogs/2010/12/la-nube-iaas-paas-saas-itaa-un-breve-repaso-de-conceptos/">ad-hoc.net/blogs</a></p>
+  </section>
+</section>
     <section>
       <h2>Tipos de despliegues</h2>
       <ul>
