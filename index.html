@@ -72,10 +72,6 @@ tema: white
       <li>El usuario sí puede gestionar su infraestructura</li>
     </ul>
   </section>
-  <section>
-    <h2>
-    Cambios para el administrador y cambios para el usuario
-  </section>
 </section>
 <section data-background="#FFCC99">
   <h2>Cloud Computing</h2>
@@ -166,17 +162,19 @@ tema: white
     <section data-background="#FFCC99">
       <section>
 	<h2>¿Cloud privado?</h2>
-	<p>Los clouds públicos están bien, pero tienen algunos aspectos negativos:</p>
 	<ul>
-	  <li>Privacidad</li>
-	  <li>Seguridad</li>
-	  <li>Vendor lock-in</li>
-	  <li>Control sobre los datos</li>
-	  <li>Personalización</li>
-	  <li>¿Rendimiento?</li>
-	  <li>¿Costes?</li>
+	  <li>Los clouds públicos están bien, pero tienen algunos aspectos negativos:
+	    <ul>
+	      <li>Privacidad</li>
+	      <li>Seguridad</li>
+	      <li>Vendor lock-in</li>
+	      <li>Control sobre los datos</li>
+	      <li>Personalización</li>
+	      <li>¿Rendimiento?</li>
+	      <li>¿Costes?</li>
+	  </ul></li>
+	  <li>Un cloud privado o híbrido es una opción a tener en cuenta si estos aspectos importan</li>
 	</ul>
-	<p>Un cloud privado o híbrido es una opción a tener en cuenta si estos aspectos importan</p>
       </section>
       <section data-background="#FFCC99">
 	<h2>IaaS</h2>
@@ -411,13 +409,30 @@ tema: white
 
 </section>
 <section>
-  <h2>Más información</h2>
-  <p><a href="http://www.gonzalonazareno.org/cloud/">Resultados del proyecto de innovación</a></p>
-  <p><a href="http://www.emadridnet.org/seminario-emadrid-aprender-software-libre-experiencias-todos-niveles/cloud-privado-iaas-fines-educativos-software-libre">Seminario
-  impartido en eMadrid net</a></p>
-  <p><a href="http://www.josedomingo.org/web/course/view.php?id=70">Jornadas sobre Cloud Computing</a></p>
-  <p><a href="http://openwebinars.net/openwebinar-por-que-openstack-software-libre-para-la-nube/">Seminario online impartido en OpenWebinars.net</a></p>
-</section>
+  <section>
+    <h2>Evolución de las aplicaciones</h2>
+    <h3>Aplicaciones "clásicas"</h3>
+    <ul>
+      <li>No tolerantes a fallos</li>
+      <li>Deben funcionar sobre hardware de altas prestaciones</li>
+      <li>Típicamente escala verticalmente (<em>scale up</em>)
+      <li>Funciona sobre máquinas de vida larga (virtuales o no)</li>
+      <li>La redundancia la debe proporcionar el hardware</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Evolución de las aplicaciones</h2>
+    <h3>Aplicaciones nativas cloud</h3>
+    <ul>
+      <li>Tolerantes a fallos (resiliencia)</li>
+      <li>Normalmente funcionan sobre máquinas de vida corta</li>
+      <li>Escalado horizontal (<em>scale-out</em>)</li>
+      <li>Elásticas</li>
+      <li>Aplicaciones inteligentes</li>
+      <li>Hardware convencional</li>
+      <li>Automatización, agilismo, devops, ...</li>
+    </ul>
+  </section>
 <section>
   <h2>Y ahora, ¿por dónde continuar?</h2>
   <ul>
