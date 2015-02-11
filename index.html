@@ -16,7 +16,6 @@ tema: white
 								  width="100px" border="0"/></a></small></p>
   <p><small>II Semana Informática. Universidad de Almería. 17 Febrero 2015</small></p>
     </section>
-</section>
 <section>
   <h2>Sobre nosotros</h2>
   <ul>
@@ -49,6 +48,7 @@ tema: white
       <li>Gestión del almacenamiento NAS o SAN</li>
       <li>Estática: Se mantienen las mismas configuraciones durante años</li>
       <li>Usuarios sin acceso directo</li>
+    </ul>
   </section>
   <section>
     <h2>Virtualización de máquinas</h2>
@@ -105,6 +105,7 @@ tema: white
       <li>Oferta de servicios con caracterísicas de cloud</li>
       <li>Habitualmente se definen tres capas o niveles: SaaS, PaaS e
 	IaaS</li>
+    </ul>
   </section>
   <section data-background="#FFCC99">
     <h3>Software as a Service (SaaS)</h3>
@@ -139,97 +140,98 @@ tema: white
       <li class="fragment">Se proporciona principalmente capacidad de cómputo, redes y
 	diversos modos de almacenamiento</li>
       <li class="fragment">Ejemplos: Amazon Web Services, Google Compute Engine</li>
+    </ul>
   </section>
   <section data-background="#FFCC99">
     <a href="http://mschnlnine.vo.llnwd.net/d1/inetpub/kevinremde/Images/679669067395_DBE9/image_thumb.png"><img src="http://mschnlnine.vo.llnwd.net/d1/inetpub/kevinremde/Images/679669067395_DBE9/image_thumb.png" alt="iaas-paas-saas"/></a>
     <p>Fuente: <a href="http://blogs.technet.com/b/kevinremde/archive/2011/04/03/saas-paas-and-iaas-oh-my-quot-cloudy-april-quot-part-3.aspx">Kevin Remde</a></p>
   </section>
 </section>
-    <section data-background="#FFCC99">
-      <h2>Tipos de despliegues</h2>
-      <ul>
-        <li><strong>Público</strong> Una empresa ofrece servicios a terceros, encargándose
-        de toda la gestión del Cloud.</li>
-        <li><strong>Privado</strong> Una organización configura sus propios recursos de
-        forma mucho más flexible en una nube. En inglés también se
-        denomina "On premise cloud"</li>
-        <li><strong>Híbrido</strong> Se utilizan recursos de la nube privada o de una o
-    varias nubes públicas en función de las características de cada
-    caso o las necesidades puntuales que haya. Normalmente utilizan
-    una API común que permita una buena integración.</li>
-      </ul>
-    </section>
-    <section data-background="#FFCC99">
-      <section>
-	<h2>¿Cloud privado?</h2>
+<section data-background="#FFCC99">
+  <h2>Tipos de despliegues</h2>
+  <ul>
+    <li><strong>Público</strong> Una empresa ofrece servicios a terceros, encargándose
+      de toda la gestión del Cloud.</li>
+    <li><strong>Privado</strong> Una organización configura sus propios recursos de
+      forma mucho más flexible en una nube. En inglés también se
+      denomina "On premise cloud"</li>
+    <li><strong>Híbrido</strong> Se utilizan recursos de la nube privada o de una o
+      varias nubes públicas en función de las características de cada
+      caso o las necesidades puntuales que haya. Normalmente utilizan
+      una API común que permita una buena integración.</li>
+  </ul>
+</section>
+<section data-background="#FFCC99">
+  <section>
+    <h2>¿Cloud privado?</h2>
+    <ul>
+      <li>Los clouds públicos están bien, pero tienen algunos aspectos negativos:
 	<ul>
-	  <li>Los clouds públicos están bien, pero tienen algunos aspectos negativos:
-	    <ul>
-	      <li>Privacidad</li>
-	      <li>Seguridad</li>
-	      <li>Vendor lock-in</li>
-	      <li>Control sobre los datos</li>
-	      <li>Personalización</li>
-	      <li>¿Rendimiento?</li>
-	      <li>¿Costes?</li>
-	  </ul></li>
-	  <li>Un cloud privado o híbrido es una opción a tener en cuenta si estos aspectos importan</li>
-	</ul>
-      </section>
-      <section data-background="#FFCC99">
-	<h2>IaaS</h2>
-	<ul>
-	  <li>Proveedores de cloud público IaaS: AWS, GCE y Azure. ¿Hay sitio para alguien más?</li>
-	  <li>Cloud Privado: VMware y plataformas de Software Libre, principalmente OpenStack</li>
-	  <li class="fragment">IaaS es muy adecuada para servicios con demanda variable como el web:</li>
-	</ul>
-	<a class="fragment" href="img/munin-memory-monitoring.jpg"><img src="img/munin-memory-monitoring.jpg" alt="Munin web" /></a>
-      </section>
-    <section data-background="#FFCC99">
-      <h3>Ejemplo de servicio en IaaS público</h3>
-      <h4>Servicio web de vídeo bajo demanda</h4>
-      <p><em>Problema: Requitos de hardware muy variables con grandes picos y
-      valles</em></p>
-      <p>Alto coste en infraestructura tradicional</p>
-
-      <p><em>Solución: Clúster con un número de nodos variable en el
-      tiempo y que se ajuste a la demanda</em></p>
-      <ul>
-        <li>Se incluyen balanceadores para repartir la carga</li>
-        <li>Se crean de forma automática nuevos servidores cuando se
+	  <li>Privacidad</li>
+	  <li>Seguridad</li>
+	  <li><em>Vendor lock-in</em></li>
+	  <li>Control sobre los datos</li>
+	  <li>Personalización</li>
+	  <li>¿Rendimiento?</li>
+	  <li>¿Costes?</li>
+      </ul></li>
+      <li>Un cloud privado o híbrido es una opción a tener en cuenta si estos aspectos importan</li>
+    </ul>
+  </section>
+  <section data-background="#FFCC99">
+    <h2>IaaS</h2>
+    <ul>
+      <li>Proveedores de cloud público IaaS: AWS, GCE y Azure. ¿Hay sitio para alguien más?</li>
+      <li>Cloud Privado: VMware y plataformas de Software Libre, principalmente OpenStack</li>
+      <li class="fragment">IaaS es muy adecuada para servicios con demanda variable como el web:</li>
+    </ul>
+    <a class="fragment" href="img/munin-memory-monitoring.jpg"><img src="img/munin-memory-monitoring.jpg" alt="Munin web" /></a>
+  </section>
+  <section data-background="#FFCC99">
+    <h3>Ejemplo de servicio en IaaS público</h3>
+    <h4>Servicio web de vídeo bajo demanda</h4>
+    <p><em>Problema: Requitos de hardware muy variables con grandes picos y
+	valles</em></p>
+    <p>Alto coste en infraestructura tradicional</p>
+    
+    <p><em>Solución: Clúster con un número de nodos variable en el
+	tiempo y que se ajuste a la demanda</em></p>
+    <ul>
+      <li>Se incluyen balanceadores para repartir la carga</li>
+      <li>Se crean de forma automática nuevos servidores cuando se
         precisa</li>
-        <li>Cuando baja la demanda, se eliminan los servidores que
+      <li>Cuando baja la demanda, se eliminan los servidores que
         sobren.</li>
-      </ul>
-
-    </section>
-    </section data-background="#A9D0F5">
-      <section data-background="#A9D0F5">
-        <h3>OpenStack</h3>
-        <p><em>&ldquo;Plataforma de cloud computing hecha con
-        software libre para desplegar nubes públicas y privadas,
-        desarrollada con la idea de ser sencilla de implementar,
-        masivamente escalable y con muchas prestaciones&rdquo;</em></p>
-        <img src="img/openstack-software-diagram.png" alt="openstack-diagram"/>
-
-      </section>
-      <section data-background="#A9D0F5">
-        <h2>¿Por qué OpenStack?</h2>
-        <ul>
+    </ul>
+    
+  </section>
+</section>
+<section data-background="#A9D0F5">
+  <h3>OpenStack</h3>
+  <p><em>&ldquo;Plataforma de cloud computing hecha con
+      software libre para desplegar nubes públicas y privadas,
+      desarrollada con la idea de ser sencilla de implementar,
+      masivamente escalable y con muchas prestaciones&rdquo;</em></p>
+  <img src="img/openstack-software-diagram.png" alt="openstack-diagram"/>
+</section>
+<section data-background="#A9D0F5">
+  <h2>¿Por qué OpenStack?</h2>
+  <ul>
     <li>Porque queremos instalar nuestro propio software para
-    proporcionar IaaS</li>
+      proporcionar IaaS</li>
     <li>Porque es software libre</li>
     <li>Porque es un proyecto estable, con muchos apoyos y muy
-    buenas perspectivas de futuro</li>
+      buenas perspectivas de futuro</li>
     <li>Porque tiene muchas funcionalidades</li>
     <li>Porque podemos utilizar hardware convencional</li>
     <li>Porque es fácil de instalar (ejem!)</li>
     <p><a href="http://blog.bitergia.com/2014/04/17/the-openstack-icehouse-release-activity-and-organizations/">Icehouse
-    release: activity and organizations</a></p>
-      </section>
-      <section data-background="#A9D0F5">
-        <h2>Otras alternativas</h2>
-        <ul>
+	release: activity and organizations</a></p>
+  </ul>
+</section>
+<section data-background="#A9D0F5">
+  <h2>Otras alternativas</h2>
+  <ul>
     <li>OpenNebula, CloudStack y Eucalyptus
       <ul>
         <li>Software libre</li>
@@ -237,181 +239,180 @@ tema: white
         <li>Probablemente más sencillas de instalar</li>
         <li>Algunos componentes más maduros</li>
         <li>Proyectos más pequeños (pros y cons)</li>
-      </ul></li>
+    </ul></li>
     <li>VMware Vcloud
       <ul>
         <li>Software privativo</li>
         <li>Optimizado para vSphere</li>
         <li>No compite en IaaS pública</li>
       </ul>
-        </ul>
-      </section>
-      <section data-background="#A9D0F5">
-	<section data-background="#A9D0F5">
-        <h2>Inicios de OpenStack</h2>
-        <table>
-    <col style="width: 25%" />
-    <col style="width: 75%"/>
-    <tr>
-      <td style="text-align: center; vertical-align:middle;"><img src="img/rackspace.png"
-      alt="rackspace" width="120"/></td>
-      <td>
-        <ul>
-          <li>Cloud propio desde 2005
-      <ul>
-        <li>Cloud servers (IaaS)</li>
-        <li>Cloud files (StaaS)</li>
-      </ul></li>
-          <li>Cambia a licencia libre en Abril 2010</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align: center; vertical-align:middle;"><img src="img/nasa.png"
-      alt="nasa" width="120"/></td>
-      <td>
-        <ul>
-          <li>Comienza a utilizar Eucalyptus, pero lo deja por
-      ser ''open core''</li>
-          <li>Crea el software para IaaS Nebula</li>
-          <li>Cambia a licencia libre en Mayo 2010</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align: center; vertical-align:middle;"><img src="img/openstack.jpg"
-      alt="openstack"  width="120"/></td>
-      <td>
-        <ul>
-          <li>Ambas lo inician en Junio de 2010</li>
-          <li>OpenStack Nova &#8678; Nebula</li>
-          <li>OpenStack Swift &#8678; Cloud Files</li>
-        </ul>
-      </td>
-    </tr>
-        </table>
-      </section>
-        <section data-background="#A9D0F5">
-        <h2>Versiones de OpenStack</h2>
-        <p>Proyecto nuevo con un fuerte ritmo de desarrollo:</p>
-        <table>
-    <col style="width: 18%" />
-    <col style="width: 32%" />
-    <col style="width: 18%" />
-    <col style="width: 32%" />
-    <tr>
-      <th>Versión</th>
-      <th>Fecha</th>
-      <th>Versión</th>
-      <th>Fecha</th>
-    </tr>
-    <tr>
-      <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Austin">Austin</a></td>
-      <td>Oct 2010</td>
-      <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Bexar">Bexar</a></td>
-      <td>Feb 2011</td>
-    </tr>
-    <tr>
-      <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Cactus">Cactus</a></td>
-      <td>Abr 2011</td>
-      <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Diablo">Diablo</a></td>
-      <td>Sep 2011</td>
-    </tr>
-    <tr>
-      <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Essex">Essex</a></td>
-      <td>Abr 2012</td>
-      <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Folsom">Folsom</a></td>
-      <td>Sep 2012</td>
-    </tr>
-    <tr>
-      <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Grizzly">Grizzly</a></td>
-      <td>Abr 2013</td>
-      <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Havana">Havana</a></td>
-      <td>Oct 2013</td>
-    </tr>
-    <tr>
-      <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Icehouse">Icehouse</a></td>
-      <td>Abr 2014</td>
-      <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Juno">Juno</a></td>
-      <td>Oct 2014</td>
-    </tr>
-        </table>
-	</section>
-      </section>
-      <section data-background="#A9D0F5">
-      <section data-background="#A9D0F5">
-      <h2>Principios fundacionales</h2>
-      <p>En Septiembre de 2012 se cede el control del proyecto a
+  </ul>
+</section>
+<section data-background="#A9D0F5">
+  <section data-background="#A9D0F5">
+    <h2>Inicios de OpenStack</h2>
+    <table>
+      <col style="width: 25%" />
+      <col style="width: 75%"/>
+      <tr>
+	<td style="text-align: center; vertical-align:middle;">
+	  <img src="img/rackspace.png" alt="rackspace" width="120"/></td>
+	<td>
+          <ul>
+            <li>Cloud propio desde 2005
+	      <ul>
+		<li>Cloud servers (IaaS)</li>
+		<li>Cloud files (StaaS)</li>
+	    </ul></li>
+            <li>Cambia a licencia libre en Abril 2010</li>
+          </ul>
+	</td>
+      </tr>
+      <tr>
+	<td style="text-align: center; vertical-align:middle;">
+	  <img src="img/nasa.png" alt="nasa" width="120"/></td>
+	<td>
+          <ul>
+            <li>Comienza a utilizar Eucalyptus, pero lo deja por
+	      ser ''open core''</li>
+            <li>Crea el software para IaaS Nebula</li>
+            <li>Cambia a licencia libre en Mayo 2010</li>
+          </ul>
+	</td>
+      </tr>
+      <tr>
+	<td style="text-align: center; vertical-align:middle;">
+	  <img src="img/openstack.jpg" alt="openstack"  width="120"/></td>
+	<td>
+          <ul>
+            <li>Ambas lo inician en Junio de 2010</li>
+            <li>OpenStack Nova &#8678; Nebula</li>
+            <li>OpenStack Swift &#8678; Cloud Files</li>
+          </ul>
+	</td>
+      </tr>
+    </table>
+  </section>
+  <section data-background="#A9D0F5">
+    <h2>Versiones de OpenStack</h2>
+    <p>Proyecto nuevo con un fuerte ritmo de desarrollo:</p>
+    <table>
+      <col style="width: 18%" />
+      <col style="width: 32%" />
+      <col style="width: 18%" />
+      <col style="width: 32%" />
+      <tr>
+	<th>Versión</th>
+	<th>Fecha</th>
+	<th>Versión</th>
+	<th>Fecha</th>
+      </tr>
+      <tr>
+	<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Austin">Austin</a></td>
+	<td>Oct 2010</td>
+	<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Bexar">Bexar</a></td>
+	<td>Feb 2011</td>
+      </tr>
+      <tr>
+	<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Cactus">Cactus</a></td>
+	<td>Abr 2011</td>
+	<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Diablo">Diablo</a></td>
+	<td>Sep 2011</td>
+      </tr>
+      <tr>
+	<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Essex">Essex</a></td>
+	<td>Abr 2012</td>
+	<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Folsom">Folsom</a></td>
+	<td>Sep 2012</td>
+      </tr>
+      <tr>
+	<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Grizzly">Grizzly</a></td>
+	<td>Abr 2013</td>
+	<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Havana">Havana</a></td>
+	<td>Oct 2013</td>
+      </tr>
+      <tr>
+	<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Icehouse">Icehouse</a></td>
+	<td>Abr 2014</td>
+	<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Juno">Juno</a></td>
+	<td>Oct 2014</td>
+      </tr>
+    </table>
+  </section>
+</section>
+<section data-background="#A9D0F5">
+  <section data-background="#A9D0F5">
+    <h2>Principios fundacionales</h2>
+    <p>En Septiembre de 2012 se cede el control del proyecto a
       la <a href="http://www.openstack.org/foundation/">OpenStack
-      Foundation</a>
+	Foundation</a>
       <ul>
         <li><a href="http://www.apache.org/licenses/LICENSE-2.0.html">Licencia
-        Apache 2.0</a>, no existe versión "enterprise"</li>
+            Apache 2.0</a>, no existe versión "enterprise"</li>
         <li>Proceso de <a href="https://blueprints.launchpad.net/openstack">diseño abierto</a></li>
         <li><a href="https://github.com/openstack/">Repositorios públicos de código fuente</a></li>
         <li>Todos los procesos de desarrollo deben estar documentados y
-    ser transparentes</li>
+	  ser transparentes</li>
         <li>Orientado para adoptar estándares abiertos</li>
         <li>Diseño modular que permite flexibilidad mediante el uso de
-        <a href="http://api.openstack.org/">APIs web</a></li>
-        </ul>
-      </section>
-      <section>
-        <h2>OpenStack Foundation</h2>
-        <img width="80%" src="img/openstack_industry_support.png"
-        alt="openstack_industry_support"/>
-        <p>
-    <small>Fuente: <a href="http://www.slideshare.net/randybias/state-of-the-stack-april-2013">cloudscaling</a></small><br/>
-    <small><a href="http://www.openstack.org/foundation/companies/">Empresas
-    partipantes en la OpenStack Foundation</a></small></p>
-      </section>
-      <section>
-	<h2>Componentes de OpenStack</h2>
-	<a href="img/openstack-components.jpg"><img src="img/openstack-components.jpg" alt="openstack components" /></a>
-	<p><small><a href="http://www.cloudscaling.com/blog/openstack/vanilla-openstack-doesnt-exist-and-never-will/">"'Vanilla OpenStack' Doesn’t Exist and Never Will"</a>
-      </section>
-      </section>
-    <section data-background="#CC9999">
-      <section data-background="#CC9999">
-        <h2>Demostración OpenStack</h2>
-      </section>
-      <section data-background="#CC9999">
+          <a href="http://api.openstack.org/">APIs web</a></li>
+      </ul>
+  </section>
+  <section>
+    <h2>OpenStack Foundation</h2>
+    <img width="80%" src="img/openstack_industry_support.png"
+         alt="openstack_industry_support"/>
+    <p>
+      <small>Fuente: <a href="http://www.slideshare.net/randybias/state-of-the-stack-april-2013">cloudscaling</a></small><br/>
+      <small><a href="http://www.openstack.org/foundation/companies/">Empresas
+	  partipantes en la OpenStack Foundation</a></small></p>
+  </section>
+  <section>
+    <h2>Componentes de OpenStack</h2>
+    <a href="img/openstack-components.jpg"><img src="img/openstack-components.jpg" alt="openstack components" /></a>
+    <p><small><a href="http://www.cloudscaling.com/blog/openstack/vanilla-openstack-doesnt-exist-and-never-will/">"'Vanilla OpenStack' Doesn’t Exist and Never Will"</a>
+  </section>
+</section>
+<section data-background="#CC9999">
+  <section data-background="#CC9999">
+    <h2>Demostración OpenStack</h2>
+  </section>
+  <section data-background="#CC9999">
     <h2>Conceptos previos (I)</h2>
     <ul>
       <li><strong>Imagen</strong>: Imagen de sistema operativo preconfigurado que se
-  utiliza como base para crear instancias. Dentro del cloud habrá
-  diferentes imágenes para cada tipo de instacia que se quiera
-  utilizar.</li>
+	utiliza como base para crear instancias. Dentro del cloud habrá
+	diferentes imágenes para cada tipo de instacia que se quiera
+	utilizar.</li>
       <li><strong>Instancia</strong>: Instancia de una imagen que se crea a
-  demanda del usuario en uno de los nodos del cloud.</li>
+	demanda del usuario en uno de los nodos del cloud.</li>
       <li><strong>Sabor</strong>: Define para una instancia el número de CPUs
-  virtuales, la RAM, si dispone o no de discos efímeros, etc.</li>
+	virtuales, la RAM, si dispone o no de discos efímeros, etc.</li>
     </ul>
   </section>
   <section data-background="#CC9999">
     <h2>Conceptos previos (II)</h2>
     <ul>
       <li><strong>IP fija</strong>: Direccion IP con la que se crean una
-  instancia en una red y que se utiliza para comunicacion
-  interna. La dirección IP
-  fija no cambia durante la vida de la instancia.</li>
+	instancia en una red y que se utiliza para comunicacion
+	interna. La dirección IP
+	fija no cambia durante la vida de la instancia.</li>
       <li><strong>IP flotante</strong>: Direccion IP asociada a una
-  instancia en un momento dado para poder acceder a ella desde fuera. Una
-  IP flotante puede asignarse a otra instancia diferente cuando se estime
-  oportuno.</li>
+	instancia en un momento dado para poder acceder a ella desde fuera. Una
+	IP flotante puede asignarse a otra instancia diferente cuando se estime
+	oportuno.</li>
       <li><strong>Grupo de seguridad</strong>: Reglas de cortafuegos que
-  controlan el
-  acceso a las instancias.</li>
+	controlan el
+	acceso a las instancias.</li>
       <li><strong>Par de claves ssh</strong>: Par de claves RSA pública/privada
-  utilizadas para acceder por ssh a las instancias desde fuera del
-  cloud.</li>
+	utilizadas para acceder por ssh a las instancias desde fuera del
+	cloud.</li>
     </ul>
   </section>
   <section data-background="#CC9999">
     <h2>Conceptos previos (III)</h2>
     <a href="http://iesgn.github.io/presentacion-ual/img/openstack-diagram.png"><img src="http://iesgn.github.io/presentacion-ual/img/openstack-diagram_2.png"/></a>
-  </section>
-
+  </section>  
 </section>
 <section>
   <section>
