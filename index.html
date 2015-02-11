@@ -142,8 +142,7 @@ tema: white
 	sistemas</li>
       <li class="fragment">Se proporciona principalmente capacidad de cómputo, redes y
 	diversos modos de almacenamiento</li>
-      <li class="fragment">Ejemplos: Amazon Web Services, Joyent, Windows Azure,
-	Rackspace Cloud Servers, Google Compute Engine</li>
+      <li class="fragment">Ejemplos: Amazon Web Services, Google Compute Engine</li>
   </section>
   <section data-background="#FFCC99">
     <a href="http://mschnlnine.vo.llnwd.net/d1/inetpub/kevinremde/Images/679669067395_DBE9/image_thumb.png"><img src="http://mschnlnine.vo.llnwd.net/d1/inetpub/kevinremde/Images/679669067395_DBE9/image_thumb.png" alt="iaas-paas-saas"/></a>
@@ -166,33 +165,26 @@ tema: white
     </section>
     <section data-background="#FFCC99">
       <section>
-        <h2>IaaS público</h2>
-    <p>Una empresa ofrece este servicio a terceros,
-    proporcionando:</p>
-    <ul>
-      <li>Control sobre la gestión de su infraestructura.</li>
-      <li>El usuario es el encargado de la configuración,
-      actualización y mantenimiento de esta infraestructura.</li>
-      <li>Finalmente la seguridad, el aislamiento, la
-        confidencialidad de los datos y la disponibilidad de los
-        servicios dependen del proveedor de IaaS</li>
-      <li>Usuario puede quedar cautivo del proveedor (<em>Vendor
-          lock-in</em>)</li>
-    </ul>
+	<h2>¿Cloud privado?</h2>
+	<p>Los clouds públicos están bien, pero tienen algunos aspectos negativos:</p>
+	<ul>
+	  <li>Privacidad</li>
+	  <li>Seguridad</li>
+	  <li>Vendor lock-in</li>
+	  <li>Control sobre los datos</li>
+	  <li>Personalización</li>
+	  <li>¿Rendimiento?</li>
+	  <li>¿Costes?</li>
+	</ul>
+	<p>Un cloud privado o híbrido es una opción a tener en cuenta si estos aspectos importan</p>
       </section>
       <section data-background="#FFCC99">
-        <h2>¿Para qué usar IaaS?</h2>
-        <ul>
-    <li>Viene a competir fuertemente con servidores dedicados,
-    virtuales o físicos</li>
-    <li>También es una tecnología a considerar en clustering</li>
-    <li>Típicamente usada por cualquier empresa con departamento de
-    sistemas para gestionar sus propios servidores a medida
-    <li>Además se han incluído nuevas tecnologías de
-      almacenamiento y redes</li>
-    <li>Lo que no pueden ofrecer los servidores dedicados o los
-    clusters tradicionales es ELASTICIDAD</li>
-        </ul>
+	<h2>IaaS</h2>
+	<ul>
+	  <li>Proveedores de cloud público IaaS: AWS, GCE & Azure. ¿Hay sitio para alguien más?</li>
+	  <li>Cloud Privado: VMware y plataformas de Software Libre, principalmente OpenStack</li>
+	  <li>En esta charla nos centraremos en IaaS privada con OpenStack</li>
+	</ul>
       </section>
     <section data-background="#FFCC99">
       <h3>Ejemplo de servicio en IaaS público</h3>
@@ -303,71 +295,50 @@ tema: white
       <section data-background="#A9D0F5">
         <section data-background="#A9D0F5">
         <h2>Versiones de OpenStack</h2>
-        <p>Proyecto muy nuevo, pero con un fuerte ritmo de desarrollo:</p>
+        <p>Proyecto nuevo con un fuerte ritmo de desarrollo:</p>
         <table>
     <col style="width: 18%" />
     <col style="width: 32%" />
-    <col style="width: 50%" />
+    <col style="width: 18%" />
+    <col style="width: 32%" />
     <tr>
       <th>Versión</th>
       <th>Fecha</th>
-      <th>Nuevos Componentes</th>
+      <th>Versión</th>
+      <th>Fecha</th>
     </tr>
     <tr>
       <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Austin">Austin</a></td>
-      <td>Octubre 2010</td>
-      <td>Nova y Swift</td>
-    </tr>
-    <tr>
+      <td>Oct 2010</td>
       <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Bexar">Bexar</a></td>
-      <td>Febrero 2011</td>
-      <td>Glance</td>
+      <td>Feb 2011</td>
     </tr>
     <tr>
       <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Cactus">Cactus</a></td>
-      <td>Abril 2011</td>
-      <td></td>
-    </tr>
-    <tr>
+      <td>Abr 2011</td>
       <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Diablo">Diablo</a></td>
-      <td>Septiembre 2011</td>
-      <td></td>
+      <td>Sep 2011</td>
     </tr>
     <tr>
       <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Essex">Essex</a></td>
-      <td>Abril 2012</td>
-      <td>Horizon, Keystone</td>
-    </tr>
-    <tr>
+      <td>Abr 2012</td>
       <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Folsom">Folsom</a></td>
-      <td>Septiembre 2012</td>
-      <td>Quantum, Cinder</td>
+      <td>Sep 2012</td>
     </tr>
     <tr>
       <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Grizzly">Grizzly</a></td>
-      <td>Abril 2013</td>
-      <td></td>
-    </tr>
-    <tr>
+      <td>Abr 2013</td>
       <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Havana">Havana</a></td>
-      <td>Octubre 2013</td>
-      <td>Neutron, Heat, Ceilometer</td>
+      <td>Oct 2013</td>
     </tr>
     <tr>
       <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Icehouse">Icehouse</a></td>
-      <td>Abril 2014</td>
-      <td>TripleO, Ironic, Trove, Marconi</td>
+      <td>Abr 2014</td>
+      <td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Juno">Juno</a></td>
+      <td>Abr 2014</td>
     </tr>
         </table>
-        <ul>
-    <li>Hasta ahora cada versión incluye importantes modificaciones
-    respecto a la anterior</li>
-    <li>Essex se considera realmente la primera versión</li>
-        </ul>
-      </section>
-      <section data-background="#A9D0F5">
-        <img src="img/plan-ubuntu.png" alt="Ubuntu OpenStack Plan" />
-      </section>
+	</section>
       </section>
       <section data-background="#A9D0F5">
       <section data-background="#A9D0F5">
@@ -397,21 +368,6 @@ tema: white
     partipantes en la OpenStack Foundation</a></p>
       </section>
       </section>
-    <section data-background="#A9D0F5">
-      <h2>¿Qué podemos hacer con OpenStack?</h2>
-      <ul>
-        <li>Ejecutar una instancia de un sistema operativo cualquiera con
-        cualquier grado de configuración</li>
-        <li>Configurar redes complejas</li>
-        <li>Acceder a la instancia de forma remota</li>
-        <li>Utilizar múltiples volúmenes de almacenamiento adicional</li>
-        <li>Realizar instantáneas de la instancia o los volúmenes</li>
-        <li>Utilizar almacenamiento de objetos</li>
-        <li>Redimensionar la instancia</li>
-        <li>Configurar clusters de instancias</li>
-        <li>Configurar automáticamente la instancia</li>
-        <li>Y un largo etcétera</li>
-    </section>
     <section data-background="#CC9999">
       <section data-background="#CC9999">
         <h2>Demostración OpenStack</h2>
