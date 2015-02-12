@@ -3,7 +3,7 @@ layout: presentacion
 title: Infraestructura en la nube con OpenStack
 tema: white
 ---
-<section data-background="http://iesgn.github.io/presentacion-ual/img/openstack.png">
+<section data-background="img/openstack.png">
   <h2>Infraestructura en la nube con OpenStack</h2>
   <p>
     <a href="http://albertomolina.wordpress.com">Alberto Molina Coballes</a> y
@@ -63,7 +63,7 @@ tema: white
     <h2>Infraestructura en nube</h2>
     <ul>
       <li>Virtualización de máquinas</li>
-      <li>Virtualización de la red &#8680; SDN</li>
+      <li>Virtualización de la red &#8680; SDN, NFV</li>
       <li>Virtualización del almacenamiento</li>
       <li>Agrupamiento de los recursos</li>
       <li>Dinámica</li>
@@ -223,8 +223,8 @@ tema: white
     <li>Porque tiene muchas funcionalidades</li>
     <li>Porque podemos utilizar hardware convencional</li>
     <li>Porque es fácil de instalar (ejem!)</li>
-    <p><a href="http://blog.bitergia.com/2014/10/15/the-openstack-juno-release-activity-and-organizations/">Bitergia:
-	The OpenStack Juno release: activity and organizations</a></p>
+    <p><small><a href="http://blog.bitergia.com/2014/10/15/the-openstack-juno-release-activity-and-organizations/">Bitergia:
+	The OpenStack Juno release: activity and organizations</a></small></p>
   </ul>
 </section>
 <section data-background="#A9D0F5">
@@ -236,7 +236,7 @@ tema: white
         <li>Más compatibles con AWS</li>
         <li>Probablemente más sencillas de instalar</li>
         <li>Algunos componentes más maduros</li>
-        <li>Proyectos más pequeños (pros y cons)</li>
+        <li>Proyectos más pequeños (ventajas e inconvenientes)</li>
     </ul></li>
     <li>VMware Vcloud
       <ul>
@@ -410,19 +410,23 @@ tema: white
   </section>
   <section data-background="#CC9999">
     <h2>Conceptos previos (III)</h2>
-    <a href="http://iesgn.github.io/presentacion-ual/img/openstack-diagram.png"><img src="http://iesgn.github.io/presentacion-ual/img/openstack-diagram_2.png"/></a>
+    <a href="img/openstack-diagram.png"><img src="img/openstack-diagram_2.png"/></a>
   </section>  
 </section>
 <section>
+  <section>
+    <h2>Evolución de las aplicaciones</h2>
+  </section>
   <section>
     <h2>Evolución de las aplicaciones</h2>
     <h3>Aplicaciones "clásicas"</h3>
     <ul>
       <li>No tolerantes a fallos</li>
       <li>Deben funcionar sobre hardware de altas prestaciones</li>
-      <li>Típicamente escala verticalmente (<em>scale up</em>)
-      <li>Funciona sobre máquinas de vida larga (virtuales o no)</li>
-      <li>La redundancia la debe proporcionar el hardware</li>
+      <li>La redundancia la debe proporcionar la capa inferior</li>
+      <li>Alta disponibilidad</li>
+      <li>Típicamente escalan verticalmente (<em>scale up</em>)
+      <li>Funcionan sobre máquinas de vida larga (virtuales o no)</li>
     </ul>
   </section>
   <section>
@@ -431,19 +435,23 @@ tema: white
     <ul>
       <li>Tolerantes a fallos (resiliencia)</li>
       <li>Normalmente funcionan sobre máquinas de vida corta</li>
-      <li>Escalado horizontal (<em>scale out</em>)</li>
+      <li>Hardware convencional</li>
+      <li>Escalan horizontalmente (<em>scale out</em>)</li>
       <li>Elásticas</li>
       <li>Aplicaciones inteligentes</li>
-      <li>Hardware convencional</li>
-      <li>Automatización, agilismo, devops, ...</li>
+      <li>Balanceadores de carga</li>
+      <li>Automatización, agilismo, ...</li>
     </ul>
-    <p><small><a href="http://www.slideshare.net/KeithBasil/basil-w-0230introoverviewopenstackiaascloudsfinal">Keith Basil: Introduction and Overview of OpenStack for IaaS</a></small></p>
-    <p><small><a href="http://www.slideshare.net/randybias/pets-vs-cattle-the-elastic-cloud-story">Randy Bias: Pets vs. Cattle: The Elastic Cloud Story</a></small></p>
+    <p><small><a href="http://www.slideshare.net/KeithBasil/basil-w-0230introoverviewopenstackiaascloudsfinal">Keith Basil - Introduction and Overview of OpenStack for IaaS</a></small></p>
+    <p><small><a href="http://www.slideshare.net/randybias/pets-vs-cattle-the-elastic-cloud-story">Randy Bias - Pets vs. Cattle: The Elastic Cloud Story</a></small></p>
   </section>
 </section>
 <section>
   <section>
-    <h2>¿Y ahora qué?</h2>
+    <h2>¿Por dónde empiezo?</h2>
+  </section>
+  <section>
+    <h2>¿Por dónde empiezo?</h2>
     <h3>Soy (quiero ser) desarrollador</h3>
     <ul>
       <li>PaaS público</li>
@@ -454,7 +462,7 @@ tema: white
     </ul>
   </section>
   <section>
-    <h2>¿Y ahora qué?</h2>
+    <h2>¿Por dónde empiezo?</h2>
     <h3>Soy (quiero ser) administrador</h3>
     <ul>
       <li>IaaS público: AWS</li>
